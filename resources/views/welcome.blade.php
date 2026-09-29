@@ -48,6 +48,10 @@
                 </ul>
 
                 <div class="nav-actions">
+                    <a href="/dashboard" class="nav-link" style="font-weight: 700; color: #f8b803; display: flex; align-items: center; gap: 6px;" title="Foodstore App Dashboard">
+                        <i data-lucide="layout-dashboard" class="lucide-sm"></i>
+                        <span>Dashboard</span>
+                    </a>
                     <button class="cart-btn" id="openCartBtn" aria-label="Open Cart">
                         <i data-lucide="shopping-cart" class="lucide-sm"></i>
                         <span>Cart (<span id="cartCountBadge">2</span>)</span>
