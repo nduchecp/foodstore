@@ -6,10 +6,12 @@
     <title>FreshFood - Delicious Food at Your Doorstep</title>
     <meta name="description" content="Order freshly prepared, mouth-watering gourmet meals, burgers, pizzas, and salads with express delivery right to your doorstep with FreshFood.">
 
-    <!-- Google Fonts: Poppins, DM Sans, Work Sans -->
+    <!-- Typography: Neue Montreal alternatives (General Sans & Switzer via Fontshare) -->
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&f[]=switzer@300,400,500,600,700,800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
     <!-- FreshFood Design System CSS -->
     <link rel="stylesheet" href="/css/freshfood.css">
@@ -48,7 +50,7 @@
                 </ul>
 
                 <div class="nav-actions">
-                    <a href="/dashboard" class="nav-link" style="font-weight: 700; color: #f8b803; display: flex; align-items: center; gap: 6px;" title="Foodstore App Dashboard">
+                    <a href="/dashboard" class="nav-link" style="font-weight: 700; color: #00A651; background: rgba(0, 166, 81, 0.15); border: 1px solid rgba(0, 166, 81, 0.4); padding: 6px 14px; border-radius: 999px; display: flex; align-items: center; gap: 6px;" title="Foodstore App Dashboard">
                         <i data-lucide="layout-dashboard" class="lucide-sm"></i>
                         <span>Dashboard</span>
                     </a>
@@ -476,7 +478,7 @@
 
                     <!-- Floating Pill 3: Sandwiches & Wraps (Left Bottom) -->
                     <div class="floating-category-card cat-pos-left-bottom" onclick="selectCategory('Sandwiches &amp; Wraps')">
-                        <div class="cat-icon" style="color: #f8b803;">
+                        <div class="cat-icon" style="color: #00A651;">
                             <i data-lucide="sandwich" class="lucide-lg"></i>
                         </div>
                         <span class="cat-name">Sandwiches &amp; Wraps</span>
@@ -485,7 +487,7 @@
 
                     <!-- Floating Pill 4: Fried & Crispy (Right Top) -->
                     <div class="floating-category-card cat-pos-right-top" onclick="selectCategory('Fried &amp; Crispy')">
-                        <div class="cat-icon" style="color: #de3b1c;">
+                        <div class="cat-icon" style="color: #FF4B5C;">
                             <i data-lucide="drumstick" class="lucide-lg"></i>
                         </div>
                         <span class="cat-name">Fried &amp; Crispy</span>

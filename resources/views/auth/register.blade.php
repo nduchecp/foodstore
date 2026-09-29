@@ -6,10 +6,12 @@
     <title>Create Account - FreshFood</title>
     <meta name="description" content="Sign up for FreshFood and get ₦2,000 in welcome discounts, priority delivery, and chef specials.">
 
-    <!-- Google Fonts: Poppins, DM Sans, Work Sans -->
+    <!-- Typography: Neue Montreal alternatives (General Sans & Switzer via Fontshare) -->
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&f[]=switzer@300,400,500,600,700,800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
     <!-- FreshFood Design System CSS -->
     <link rel="stylesheet" href="/css/freshfood.css">
@@ -48,9 +50,9 @@
                     <div>
                         <h4 class="auth-preview-title">Margherita Pizza (12")</h4>
                         <div class="auth-preview-badge">
-                            <span><span class="naira">₦</span>30.00</span> • <span style="color:#a0aec0;">⏱ 25 min delivery</span>
+                            <span><span class="naira">₦</span>5,500</span> • <span style="color:#9CA3AF;">⏱ 25 min delivery</span>
                         </div>
-                        <div style="font-size: 0.75rem; color: #a0aec0; margin-top: 4px;">
+                        <div style="font-size: 0.75rem; color: #9CA3AF; margin-top: 4px;">
                             ⭐ 4.9 Rating from 340+ food lovers
                         </div>
                     </div>

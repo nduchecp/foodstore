@@ -2,21 +2,33 @@
 @import url('./freshfood.css');
 
 :root {
-  --dash-bg: #f8faf8;
+  /* User-Specified Design Tokens */
+  --primary-green: #00A651;
+  --coral-accent: #FF4B5C;
+  --brand-black: #0A0A0A;
+  --pale-green: #E7F8ED;
+  --neutral-gray: #9CA3AF;
+
+  --dash-bg: #f8faf9;
   --dash-card-bg: #ffffff;
-  --dash-header-green: #0a3323;
-  --dash-primary-green: #118150;
-  --dash-primary-hover: #0c6940;
-  --dash-emerald-light: #e6f6ee;
-  --dash-emerald-border: #bbf7d0;
-  --dash-orange: #f25822;
+  --dash-header-green: #0A0A0A;
+  --dash-primary-green: #00A651;
+  --dash-primary-hover: #008f45;
+  --dash-emerald-light: #E7F8ED;
+  --dash-emerald-border: #a7f3d0;
+  --dash-coral: #FF4B5C;
+  --dash-orange: #FF4B5C;
   --dash-amber: #f59e0b;
-  --dash-text-main: #141c17;
-  --dash-text-muted: #64748b;
-  --dash-border: #e2e8f0;
-  --dash-shadow-sm: 0 2px 8px rgba(10, 51, 35, 0.04);
-  --dash-shadow-md: 0 6px 20px rgba(10, 51, 35, 0.08);
-  --dash-shadow-lg: 0 16px 36px rgba(10, 51, 35, 0.12);
+  --dash-text-main: #0A0A0A;
+  --dash-text-muted: #6B7280;
+  --dash-neutral-gray: #9CA3AF;
+  --dash-border: #e5e7eb;
+  --dash-shadow-sm: 0 2px 8px rgba(10, 10, 10, 0.04);
+  --dash-shadow-md: 0 6px 20px rgba(10, 10, 10, 0.08);
+  --dash-shadow-lg: 0 16px 36px rgba(10, 10, 10, 0.12);
+
+  --font-heading: 'Neue Montreal', 'General Sans', 'Switzer', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Neue Montreal', 'General Sans', 'Switzer', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 body.dashboard-body {
@@ -36,7 +48,7 @@ body.dashboard-body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -619,22 +631,23 @@ body.dashboard-body {
   font-size: 0.88rem;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 14px rgba(17, 129, 80, 0.35);
+  box-shadow: 0 4px 14px rgba(0, 166, 81, 0.35);
 }
 
 .dash-cart-pill-btn:hover {
   background: var(--dash-primary-hover);
   transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(17, 129, 80, 0.45);
+  box-shadow: 0 6px 18px rgba(0, 166, 81, 0.45);
 }
 
 .badge-counter {
-  background: #ef4444;
+  background: var(--coral-accent, #FF4B5C);
   color: #ffffff;
   font-size: 0.7rem;
   font-weight: 800;
   padding: 1px 7px;
   border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(255, 75, 92, 0.35);
 }
 
 .user-profile-btn {
@@ -745,7 +758,7 @@ body.dashboard-body {
   .banner-slide-overlay {
     padding: 28px 24px;
     max-width: 100%;
-    background: linear-gradient(90deg, rgba(9, 46, 30, 0.95) 0%, rgba(9, 46, 30, 0.88) 100%);
+    background: linear-gradient(90deg, rgba(10, 10, 10, 0.96) 0%, rgba(10, 10, 10, 0.90) 100%);
   }
 }
 
@@ -757,24 +770,27 @@ body.dashboard-body {
 }
 
 .promo-badge-tag {
-  background: var(--dash-amber);
-  color: #78350f;
+  background: var(--coral-accent, #FF4B5C);
+  color: #ffffff;
   font-size: 0.75rem;
   font-weight: 800;
   padding: 4px 12px;
   border-radius: 6px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(255, 75, 92, 0.35);
 }
 
 .promo-badge-tag.tag-green {
-  background: #10b981;
-  color: #064e3b;
+  background: var(--primary-green, #00A651);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 166, 81, 0.35);
 }
 
 .promo-badge-tag.tag-orange {
-  background: #f97316;
-  color: #7c2d12;
+  background: var(--coral-accent, #FF4B5C);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(255, 75, 92, 0.35);
 }
 
 .promo-countdown {
@@ -1134,7 +1150,7 @@ body.dashboard-body {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: rgba(17, 129, 80, 0.92);
+  background: rgba(0, 166, 81, 0.95);
   color: #ffffff;
   font-size: 0.68rem;
   font-weight: 800;
@@ -1143,13 +1159,14 @@ body.dashboard-body {
   padding: 4px 10px;
   border-radius: 8px;
   backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 166, 81, 0.3);
 }
 
 .badge-bestseller {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: rgba(245, 158, 11, 0.95);
+  background: var(--coral-accent, #FF4B5C);
   color: #ffffff;
   font-size: 0.68rem;
   font-weight: 800;
@@ -1157,6 +1174,9 @@ body.dashboard-body {
   letter-spacing: 0.4px;
   padding: 4px 10px;
   border-radius: 8px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(255, 75, 92, 0.35);
+}
   backdrop-filter: blur(4px);
 }
 
