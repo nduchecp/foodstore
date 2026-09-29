@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
     <!-- FreshFood Design System CSS -->
-    <link rel="stylesheet" href="/css/freshfood.css">
+    <link rel="stylesheet" href="./css/freshfood.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="./favicon.ico">
 </head>
 <body>
 
@@ -52,7 +52,7 @@
                         <i data-lucide="shopping-cart" class="lucide-sm"></i>
                         <span>Cart (<span id="cartCountBadge">2</span>)</span>
                     </button>
-                    <a href="/login" class="login-btn">
+                    <a href="login.html" class="login-btn">
                         <i data-lucide="log-in" class="lucide-sm" style="margin-right: 6px;"></i>
                         <span>Login</span>
                     </a>
@@ -102,16 +102,16 @@
 
                         <!-- Right Floating Girl Eating Card -->
                         <div class="girl-eating-card">
-                            <img src="/images/customer_girl.jpg" alt="Happy Customer Eating Fresh Food" loading="lazy">
+                            <img src="./images/customer_girl.jpg" alt="Happy Customer Eating Fresh Food" loading="lazy">
                         </div>
 
                         <!-- Big Center Hero Burger -->
-                        <img src="/images/hero_burger.jpg" alt="Deluxe FreshFood Burger" class="hero-main-burger">
+                        <img src="./images/hero_burger.jpg" alt="Deluxe FreshFood Burger" class="hero-main-burger">
 
                         <!-- Customer Avatar Counter Stack -->
                         <div class="customers-bubble">
                             <div class="avatar-stack">
-                                <img src="/images/customer_girl.jpg" alt="Customer 1">
+                                <img src="./images/customer_girl.jpg" alt="Customer 1">
                                 <div class="avatar-circle">FA</div>
                                 <div class="avatar-circle">TO</div>
                                 <div class="avatar-circle">+1k</div>
@@ -151,7 +151,7 @@
                         <div class="promo-card-text">
                             <span class="promo-tag-badge">Irresistibly Tasty Meals</span>
                             <h3 class="promo-card-title-dark">MADE FRESH •<br>SERVED HOT</h3>
-                            <button class="promo-btn-white" onclick="quickAddToCart('Healthy Rice &amp; Chicken Bowl', 14.50, '/images/tasty_meal_bowl.jpg')">
+                            <button class="promo-btn-white" onclick="quickAddToCart('Healthy Rice &amp; Chicken Bowl', 14.50, './images/tasty_meal_bowl.jpg')">
                                 <span>Order Now</span>
                                 <i data-lucide="flame" class="lucide-sm lucide-flame-icon"></i>
                             </button>
@@ -160,7 +160,7 @@
                             <span class="discount-small">Up to</span>
                             <span class="discount-big">40%</span>
                         </div>
-                        <img src="/images/tasty_meal_bowl.jpg" alt="Tasty Meal Bowl" class="promo-img-round">
+                        <img src="./images/tasty_meal_bowl.jpg" alt="Tasty Meal Bowl" class="promo-img-round">
                     </div>
 
                     <!-- Bottom Dark Green Card -->
@@ -170,7 +170,7 @@
                                 <i data-lucide="sparkles" class="lucide-sm"></i> SUPER
                             </span>
                             <h3 class="promo-card-title-light">DELICIOUS<br>PIZZA</h3>
-                            <button class="promo-btn-white" onclick="quickAddToCart('Super Delicious Pizza Slice', 18.00, '/images/delicious_pizza_slice.jpg')">
+                            <button class="promo-btn-white" onclick="quickAddToCart('Super Delicious Pizza Slice', 18.00, './images/delicious_pizza_slice.jpg')">
                                 <span>Order Now</span>
                                 <i data-lucide="flame" class="lucide-sm lucide-flame-icon"></i>
                             </button>
@@ -179,7 +179,7 @@
                             <span class="discount-small">Up to</span>
                             <span class="discount-big">50%</span>
                         </div>
-                        <img src="/images/delicious_pizza_slice.jpg" alt="Super Delicious Pizza" class="promo-img-round">
+                        <img src="./images/delicious_pizza_slice.jpg" alt="Super Delicious Pizza" class="promo-img-round">
                     </div>
                 </div>
 
@@ -196,14 +196,14 @@
                     </div>
 
                     <div class="exploding-burger-box">
-                        <img src="/images/exploding_burger.jpg" alt="Loaded Exploding Beef Burger">
+                        <img src="./images/exploding_burger.jpg" alt="Loaded Exploding Beef Burger">
                     </div>
 
                     <div class="orange-card-footer">
                         <div>
                             <span class="special-discount-tag">LIMITED TIME OFFER • SPECIAL DISCOUNT</span>
                         </div>
-                        <button class="promo-btn-white" onclick="quickAddToCart('Loaded Triple Beef Burger', 22.50, '/images/exploding_burger.jpg')">
+                        <button class="promo-btn-white" onclick="quickAddToCart('Loaded Triple Beef Burger', 22.50, './images/exploding_burger.jpg')">
                             <span>Order Now</span>
                             <i data-lucide="flame" class="lucide-sm lucide-flame-icon"></i>
                         </button>
@@ -243,7 +243,7 @@
                         </span>
                     </div>
                     <div class="card-img-box">
-                        <img src="/images/fresh_salad.jpg" alt="Fresh Garden Salad">
+                        <img src="./images/fresh_salad.jpg" alt="Fresh Garden Salad">
                     </div>
                     <h3 class="food-card-title">Fresh Garden Salad</h3>
                     <span class="food-card-category">Healthy Bites</span>
@@ -262,7 +262,7 @@
                         <div class="food-card-price">
                             <span class="naira">₦</span>12.75
                         </div>
-                        <button class="btn-add-circle" onclick="quickAddToCart('Fresh Garden Salad', 12.75, '/images/fresh_salad.jpg')" title="Add to cart">
+                        <button class="btn-add-circle" onclick="quickAddToCart('Fresh Garden Salad', 12.75, './images/fresh_salad.jpg')" title="Add to cart">
                             <i data-lucide="plus" class="lucide-md"></i>
                         </button>
                     </div>
@@ -276,7 +276,7 @@
                         </span>
                     </div>
                     <div class="card-img-box">
-                        <img src="/images/category_pizza.jpg" alt="Margherita Pizza (12&quot;)">
+                        <img src="./images/category_pizza.jpg" alt="Margherita Pizza (12&quot;)">
                     </div>
                     <h3 class="food-card-title">Margherita Pizza (12")</h3>
                     <span class="food-card-category">Italian Classics</span>
@@ -295,7 +295,7 @@
                         <div class="food-card-price">
                             <span class="naira">₦</span>30.00
                         </div>
-                        <button class="btn-add-circle" onclick="quickAddToCart('Margherita Pizza (12&quot;)', 30.00, '/images/category_pizza.jpg')" title="Add to cart">
+                        <button class="btn-add-circle" onclick="quickAddToCart('Margherita Pizza (12&quot;)', 30.00, './images/category_pizza.jpg')" title="Add to cart">
                             <i data-lucide="plus" class="lucide-md"></i>
                         </button>
                     </div>
@@ -309,7 +309,7 @@
                         </span>
                     </div>
                     <div class="card-img-box">
-                        <img src="/images/triple_chocolate.jpg" alt="Triple Chocolate Mousse">
+                        <img src="./images/triple_chocolate.jpg" alt="Triple Chocolate Mousse">
                     </div>
                     <h3 class="food-card-title">Triple Chocolate</h3>
                     <span class="food-card-category">Desserts &amp; Treats</span>
@@ -328,7 +328,7 @@
                         <div class="food-card-price">
                             <span class="naira">₦</span>5.50
                         </div>
-                        <button class="btn-add-circle" onclick="quickAddToCart('Triple Chocolate', 5.50, '/images/triple_chocolate.jpg')" title="Add to cart">
+                        <button class="btn-add-circle" onclick="quickAddToCart('Triple Chocolate', 5.50, './images/triple_chocolate.jpg')" title="Add to cart">
                             <i data-lucide="plus" class="lucide-md"></i>
                         </button>
                     </div>
@@ -342,7 +342,7 @@
                         </span>
                     </div>
                     <div class="card-img-box">
-                        <img src="/images/hero_burger.jpg" alt="Classic Double Cheeseburger">
+                        <img src="./images/hero_burger.jpg" alt="Classic Double Cheeseburger">
                     </div>
                     <h3 class="food-card-title">Classic Cheeseburger</h3>
                     <span class="food-card-category">Gourmet Burgers</span>
@@ -361,7 +361,7 @@
                         <div class="food-card-price">
                             <span class="naira">₦</span>14.50
                         </div>
-                        <button class="btn-add-circle" onclick="quickAddToCart('Classic Cheeseburger', 14.50, '/images/hero_burger.jpg')" title="Add to cart">
+                        <button class="btn-add-circle" onclick="quickAddToCart('Classic Cheeseburger', 14.50, './images/hero_burger.jpg')" title="Add to cart">
                             <i data-lucide="plus" class="lucide-md"></i>
                         </button>
                     </div>
@@ -375,7 +375,7 @@
                         </span>
                     </div>
                     <div class="card-img-box">
-                        <img src="/images/chicken_burger.jpg" alt="Crispy Chicken Burger">
+                        <img src="./images/chicken_burger.jpg" alt="Crispy Chicken Burger">
                     </div>
                     <h3 class="food-card-title">Crispy Chicken Burger</h3>
                     <span class="food-card-category">Chef's Special</span>
@@ -394,7 +394,7 @@
                         <div class="food-card-price">
                             <span class="naira">₦</span>11.20
                         </div>
-                        <button class="btn-add-circle" onclick="quickAddToCart('Crispy Chicken Burger', 11.20, '/images/chicken_burger.jpg')" title="Add to cart">
+                        <button class="btn-add-circle" onclick="quickAddToCart('Crispy Chicken Burger', 11.20, './images/chicken_burger.jpg')" title="Add to cart">
                             <i data-lucide="plus" class="lucide-md"></i>
                         </button>
                     </div>
@@ -408,7 +408,7 @@
                         </span>
                     </div>
                     <div class="card-img-box">
-                        <img src="/images/mushroom_pasta.jpg" alt="Creamy Mushroom Pasta">
+                        <img src="./images/mushroom_pasta.jpg" alt="Creamy Mushroom Pasta">
                     </div>
                     <h3 class="food-card-title">Creamy Mushroom Pasta</h3>
                     <span class="food-card-category">Italian Classics</span>
@@ -427,7 +427,7 @@
                         <div class="food-card-price">
                             <span class="naira">₦</span>16.80
                         </div>
-                        <button class="btn-add-circle" onclick="quickAddToCart('Creamy Mushroom Pasta', 16.80, '/images/mushroom_pasta.jpg')" title="Add to cart">
+                        <button class="btn-add-circle" onclick="quickAddToCart('Creamy Mushroom Pasta', 16.80, './images/mushroom_pasta.jpg')" title="Add to cart">
                             <i data-lucide="plus" class="lucide-md"></i>
                         </button>
                     </div>
@@ -450,7 +450,7 @@
                 <!-- Interactive Pizza Platter with Floating Category Pills matching mockup -->
                 <div class="category-showcase-box">
                     <!-- Central Platter -->
-                    <img src="/images/category_pizza.jpg" alt="Artisanal Pizza Platter" class="center-platter-img">
+                    <img src="./images/category_pizza.jpg" alt="Artisanal Pizza Platter" class="center-platter-img">
 
                     <!-- Floating Pill 1: Burgers & Fries (Top) -->
                     <div class="floating-category-card cat-pos-top" onclick="selectCategory('Burgers &amp; Fries')">
@@ -530,7 +530,7 @@
                             </button>
                         </div>
                         <div class="deal-item-content">
-                            <img src="/images/chicken_burger.jpg" alt="Signature Chicken Burger" class="deal-item-thumb">
+                            <img src="./images/chicken_burger.jpg" alt="Signature Chicken Burger" class="deal-item-thumb">
                             <div class="deal-item-info">
                                 <h4 class="deal-item-title">Signature Chicken Burger</h4>
                                 <div class="deal-item-rating">
@@ -555,7 +555,7 @@
                                         <i data-lucide="plus" class="lucide-sm"></i>
                                     </button>
                                 </div>
-                                <button class="btn-deal-add" onclick="addDealToCart(this, 'Signature Chicken Burger', 4.99, '/images/chicken_burger.jpg')">
+                                <button class="btn-deal-add" onclick="addDealToCart(this, 'Signature Chicken Burger', 4.99, './images/chicken_burger.jpg')">
                                     Add to cart
                                 </button>
                             </div>
@@ -571,7 +571,7 @@
                             </button>
                         </div>
                         <div class="deal-item-content">
-                            <img src="/images/mushroom_pasta.jpg" alt="Creamy Mushroom Pasta" class="deal-item-thumb">
+                            <img src="./images/mushroom_pasta.jpg" alt="Creamy Mushroom Pasta" class="deal-item-thumb">
                             <div class="deal-item-info">
                                 <h4 class="deal-item-title">Creamy Mushroom Pasta</h4>
                                 <div class="deal-item-rating">
@@ -596,7 +596,7 @@
                                         <i data-lucide="plus" class="lucide-sm"></i>
                                     </button>
                                 </div>
-                                <button class="btn-deal-add" onclick="addDealToCart(this, 'Creamy Mushroom Pasta', 5.25, '/images/mushroom_pasta.jpg')">
+                                <button class="btn-deal-add" onclick="addDealToCart(this, 'Creamy Mushroom Pasta', 5.25, './images/mushroom_pasta.jpg')">
                                     Add to cart
                                 </button>
                             </div>
@@ -611,7 +611,7 @@
                         <i data-lucide="heart" class="lucide-md"></i>
                     </button>
 
-                    <img src="/images/category_pizza.jpg" alt="Spicy Chicken BBQ Pizza" class="featured-center-img">
+                    <img src="./images/category_pizza.jpg" alt="Spicy Chicken BBQ Pizza" class="featured-center-img">
 
                     <div class="center-timer-box">
                         <i data-lucide="clock" class="lucide-sm"></i>
@@ -647,7 +647,7 @@
                                 <i data-lucide="plus" class="lucide-sm"></i>
                             </button>
                         </div>
-                        <button class="btn-center-add" onclick="addDealToCart(this, 'Spicy Chicken BBQ Pizza', 7.99, '/images/category_pizza.jpg')">
+                        <button class="btn-center-add" onclick="addDealToCart(this, 'Spicy Chicken BBQ Pizza', 7.99, './images/category_pizza.jpg')">
                             <span>Add to cart</span>
                         </button>
                     </div>
@@ -664,7 +664,7 @@
                             </button>
                         </div>
                         <div class="deal-item-content">
-                            <img src="/images/fresh_salad.jpg" alt="Fresh Garden Salad" class="deal-item-thumb">
+                            <img src="./images/fresh_salad.jpg" alt="Fresh Garden Salad" class="deal-item-thumb">
                             <div class="deal-item-info">
                                 <h4 class="deal-item-title">Fresh Garden Salad</h4>
                                 <div class="deal-item-rating">
@@ -689,7 +689,7 @@
                                         <i data-lucide="plus" class="lucide-sm"></i>
                                     </button>
                                 </div>
-                                <button class="btn-deal-add" onclick="addDealToCart(this, 'Fresh Garden Salad', 2.50, '/images/fresh_salad.jpg')">
+                                <button class="btn-deal-add" onclick="addDealToCart(this, 'Fresh Garden Salad', 2.50, './images/fresh_salad.jpg')">
                                     Add to cart
                                 </button>
                             </div>
@@ -705,7 +705,7 @@
                             </button>
                         </div>
                         <div class="deal-item-content">
-                            <img src="/images/hero_burger.jpg" alt="Gourmet Veggie Burger" class="deal-item-thumb">
+                            <img src="./images/hero_burger.jpg" alt="Gourmet Veggie Burger" class="deal-item-thumb">
                             <div class="deal-item-info">
                                 <h4 class="deal-item-title">Gourmet Veggie Burger</h4>
                                 <div class="deal-item-rating">
@@ -730,7 +730,7 @@
                                         <i data-lucide="plus" class="lucide-sm"></i>
                                     </button>
                                 </div>
-                                <button class="btn-deal-add" onclick="addDealToCart(this, 'Gourmet Veggie Burger', 4.99, '/images/hero_burger.jpg')">
+                                <button class="btn-deal-add" onclick="addDealToCart(this, 'Gourmet Veggie Burger', 4.99, './images/hero_burger.jpg')">
                                     Add to cart
                                 </button>
                             </div>
@@ -772,7 +772,7 @@
                     </div>
                 </div>
                 <div style="text-align: center;">
-                    <img src="/images/customer_girl.jpg" alt="Mobile Ordering" style="width: 280px; height: 280px; border-radius: 28px; object-fit: cover; margin: 0 auto; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                    <img src="./images/customer_girl.jpg" alt="Mobile Ordering" style="width: 280px; height: 280px; border-radius: 28px; object-fit: cover; margin: 0 auto; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
                 </div>
             </div>
         </div>
@@ -860,7 +860,7 @@
         <div class="cart-items-list" id="cartItemsContainer">
             <!-- Initial item 1 -->
             <div class="cart-item" data-id="item-1">
-                <img src="/images/category_pizza.jpg" alt="Margherita Pizza" class="cart-item-img">
+                <img src="./images/category_pizza.jpg" alt="Margherita Pizza" class="cart-item-img">
                 <div class="cart-item-details">
                     <h4 class="cart-item-title">Margherita Pizza (12")</h4>
                     <div class="cart-item-price"><span class="naira">₦</span>30.00</div>
@@ -873,7 +873,7 @@
 
             <!-- Initial item 2 -->
             <div class="cart-item" data-id="item-2">
-                <img src="/images/chicken_burger.jpg" alt="Signature Chicken Burger" class="cart-item-img">
+                <img src="./images/chicken_burger.jpg" alt="Signature Chicken Burger" class="cart-item-img">
                 <div class="cart-item-details">
                     <h4 class="cart-item-title">Signature Chicken Burger</h4>
                     <div class="cart-item-price"><span class="naira">₦</span>4.99</div>
@@ -907,8 +907,8 @@
     <script>
         // State
         let cartItems = [
-            { id: 'item-1', title: 'Margherita Pizza (12")', price: 30.00, img: '/images/category_pizza.jpg', qty: 1 },
-            { id: 'item-2', title: 'Signature Chicken Burger', price: 4.99, img: '/images/chicken_burger.jpg', qty: 1 }
+            { id: 'item-1', title: 'Margherita Pizza (12")', price: 30.00, img: './images/category_pizza.jpg', qty: 1 },
+            { id: 'item-2', title: 'Signature Chicken Burger', price: 4.99, img: './images/chicken_burger.jpg', qty: 1 }
         ];
 
         // Quantity Adjuster
@@ -1049,7 +1049,6 @@
 
         // Heart favorite toggle
         function toggleFavorite(btn) {
-            const icon = btn.querySelector('svg, i');
             if (btn.classList.contains('active-fav')) {
                 btn.classList.remove('active-fav');
                 btn.style.color = '#cbd5e0';
