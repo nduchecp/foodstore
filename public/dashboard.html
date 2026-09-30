@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FreshFood - Grocery &amp; Food Delivery Dashboard</title>
-    <meta name="description" content="Shop fresh organic grains, vegetables, healthy snacks, cold-pressed juices and chef meals with 30-min express delivery on FreshFood.">
+    <title>FreshFood - Farm-Fresh Groceries &amp; Wholesale Produce Dashboard</title>
+    <meta name="description" content="Shop direct-from-farm produce, organic grains, fresh vegetables, tubers, and wholesale farm staples directly from farmers and producers on FreshFood.">
 
     <!-- Typography: Neue Montreal alternatives (General Sans & Switzer via Fontshare) -->
     <link rel="preconnect" href="https://api.fontshare.com">
@@ -105,10 +105,10 @@
                     <span class="sidebar-badge">4</span>
                 </div>
 
-                <div class="sidebar-nav-item" onclick="sidebarFilter('meals')">
+                <div class="sidebar-nav-item" onclick="sidebarFilter('roots')">
                     <div class="sidebar-nav-item-left">
-                        <i data-lucide="utensils" class="lucide-sm"></i>
-                        <span>Chef Prepared Meals</span>
+                        <i data-lucide="layers" class="lucide-sm"></i>
+                        <span>Tubers &amp; Roots</span>
                     </div>
                     <span class="sidebar-badge">4</span>
                 </div>
@@ -328,24 +328,24 @@
                         </div>
                     </div>
 
-                    <!-- Slide 3: Gourmet Artisanal Feast -->
+                    <!-- Slide 3: Direct-from-Millers Wholesale Staples -->
                     <div class="banner-slide" data-slide="2">
-                        <img src="./images/gourmet_banner.jpg" alt="Artisan Chef Meals" class="banner-slide-image">
+                        <img src="./images/wholesale_farm_grains.jpg" alt="Wholesale Farm Staples" class="banner-slide-image">
                         <div class="banner-slide-overlay">
                             <div class="promo-tag-row">
-                                <span class="promo-badge-tag tag-orange">Chef Specials</span>
+                                <span class="promo-badge-tag tag-orange">Wholesale Hub</span>
                                 <span class="promo-countdown" style="color: #fed7aa;">
-                                    <i data-lucide="flame" class="lucide-sm"></i>
-                                    <span>Hot &amp; Sizzling Feast</span>
+                                    <i data-lucide="package" class="lucide-sm"></i>
+                                    <span>Direct From Millers &amp; Farmers</span>
                                 </span>
                             </div>
-                            <h2 class="promo-heading">Artisanal Wood-Fired Pizzas &amp; Gourmet Burgers!</h2>
-                            <p class="promo-subtext">Mouth-watering meals crafted by master chefs, delivered piping hot in record time.</p>
+                            <h2 class="promo-heading">Bulk Grains, Flours, Beans &amp; Yam Tubers!</h2>
+                            <p class="promo-subtext">Source wholesale sacks directly from producers &amp; distributors at genuine farm-gate rates.</p>
                             <div class="promo-code-box">
-                                <span class="coupon-code-chip">FEAST30</span>
-                                <button class="apply-coupon-btn" onclick="copyAndApplyPromo('FEAST30')">
+                                <span class="coupon-code-chip">WHOLESALE25</span>
+                                <button class="apply-coupon-btn" onclick="copyAndApplyPromo('WHOLESALE25')">
                                     <i data-lucide="check" class="lucide-sm" style="display:none;"></i>
-                                    <span>Get 30% OFF</span>
+                                    <span>Get 25% OFF</span>
                                 </button>
                             </div>
                         </div>
@@ -375,7 +375,7 @@
             <div class="section-header-flex">
                 <div>
                     <h3 class="section-title">Shop by Category</h3>
-                    <p style="font-size: 0.82rem; color: #64748b; margin-top: 2px;">Fresh farm harvests, pantry staples, and chef-curated goods</p>
+                    <p style="font-size: 0.82rem; color: #64748b; margin-top: 2px;">Direct-from-farm produce, grains, and wholesale staples</p>
                 </div>
                 <span class="section-action-link" style="cursor:pointer; font-weight:700; color:#118150; font-size:0.85rem;" onclick="filterCategory('all')">View All</span>
             </div>
@@ -428,11 +428,11 @@
                     </div>
                 </div>
 
-                <!-- Gourmet Prepared Meals -->
-                <div class="category-chip" data-category="meals" onclick="filterCategory('meals')">
-                    <img src="./images/delicious_pizza_slice.jpg" alt="Chef Prepared Meals" class="chip-thumb">
+                <!-- Tubers & Roots -->
+                <div class="category-chip" data-category="roots" onclick="filterCategory('roots')">
+                    <img src="./images/wholesale_farm_grains.jpg" alt="Tubers & Roots" class="chip-thumb">
                     <div class="chip-info">
-                        <span class="chip-name">Chef Meals</span>
+                        <span class="chip-name">Tubers &amp; Roots</span>
                         <span class="chip-count">4 items</span>
                     </div>
                 </div>
@@ -827,22 +827,22 @@
             },
             {
                 id: 'vg-4',
-                title: 'Gourmet Mediterranean Salad Bowl',
+                title: 'Fresh Habanero Pepper (Atarodo 1kg)',
                 category: 'vegetables',
                 categoryLabel: 'Vegetables',
-                weight: '400g Ready to Eat with Dressing',
-                price: 4500,
-                oldPrice: 5200,
+                weight: '1kg Basket • Direct Farm Harvest',
+                price: 2200,
+                oldPrice: 3000,
                 rating: 4.9,
                 reviews: 410,
-                time: '15-20m',
-                image: './images/fresh_salad.jpg',
-                badge: 'Chef Special',
+                time: 'Same-day',
+                image: './images/grocery_vegetables.jpg',
+                badge: 'Hot Farm Pick',
                 organic: true,
-                tags: ['salad', 'dressing', 'bowl', 'vegetables']
+                tags: ['pepper', 'atarodo', 'habanero', 'vegetables', 'farm']
             },
 
-            /* Snacks */
+            /* Snacks & Pantry */
             {
                 id: 'sn-1',
                 title: 'Spiced Plantain & Roasted Cashew Mix',
@@ -877,35 +877,35 @@
             },
             {
                 id: 'sn-3',
-                title: 'Triple Belgian Chocolate Brownie Bites',
+                title: 'Cold-Pressed Virgin Palm Oil (2L)',
                 category: 'snacks',
-                categoryLabel: 'Snacks & Bites',
-                weight: '300g Box • Dark & Milk Cocoa',
-                price: 4800,
-                oldPrice: 5600,
+                categoryLabel: 'Pantry & Oils',
+                weight: '2L Container • 100% Pure Nsukka',
+                price: 4200,
+                oldPrice: 5000,
                 rating: 5.0,
                 reviews: 720,
-                time: '15-20m',
-                image: './images/triple_chocolate.jpg',
-                badge: 'Decadent',
-                organic: false,
-                tags: ['chocolate', 'brownie', 'dessert', 'snacks', 'sweet']
+                time: 'Same-day',
+                image: './images/grocery_grains.jpg',
+                badge: '100% Pure',
+                organic: true,
+                tags: ['oil', 'palm oil', 'cooking', 'pantry', 'staples']
             },
             {
                 id: 'sn-4',
-                title: 'Crispy Gourmet Potato Chips (Smoky Paprika)',
+                title: 'Farm Fresh Large Eggs (Crate of 30)',
                 category: 'snacks',
-                categoryLabel: 'Snacks & Bites',
-                weight: '200g Artisanal Kettle Cooked',
-                price: 1800,
+                categoryLabel: 'Poultry & Eggs',
+                weight: 'Crate of 30 • Grade A Farm Eggs',
+                price: 4800,
                 oldPrice: null,
-                rating: 4.7,
-                reviews: 280,
-                time: '15-20m',
-                image: './images/grocery_snacks.jpg',
-                badge: 'Crispy',
-                organic: false,
-                tags: ['chips', 'potato', 'paprika', 'snacks']
+                rating: 4.8,
+                reviews: 580,
+                time: 'Same-day',
+                image: './images/fresh_salad.jpg',
+                badge: 'Daily Sourced',
+                organic: true,
+                tags: ['eggs', 'poultry', 'farm', 'crate']
             },
 
             /* Drinks */
@@ -974,70 +974,70 @@
                 tags: ['zobo', 'hibiscus', 'drinks', 'cooler']
             },
 
-            /* Chef Prepared Meals */
+            /* Tubers & Root Crops */
             {
-                id: 'ml-1',
-                title: 'Artisan Wood-Fired Margherita Pizza',
-                category: 'meals',
-                categoryLabel: 'Chef Meals',
-                weight: 'Large 12-inch • Buffalo Mozzarella',
-                price: 9500,
-                oldPrice: 11000,
+                id: 'rt-1',
+                title: 'Premium Selected Yam Tubers (Pair)',
+                category: 'roots',
+                categoryLabel: 'Tubers & Roots',
+                weight: '2 Large Tubers • Sweet White Yam',
+                price: 6500,
+                oldPrice: 7800,
                 rating: 4.9,
                 reviews: 650,
-                time: '25-30m',
-                image: './images/delicious_pizza_slice.jpg',
-                badge: 'Wood Fired',
-                organic: false,
-                tags: ['pizza', 'margherita', 'cheese', 'italian', 'meals']
+                time: 'Same-day',
+                image: './images/wholesale_farm_grains.jpg',
+                badge: 'Farm Selected',
+                organic: true,
+                tags: ['yam', 'tubers', 'roots', 'farm', 'wholesale']
             },
             {
-                id: 'ml-2',
-                title: 'Ultimate Double Truffle Cheeseburger',
-                category: 'meals',
-                categoryLabel: 'Chef Meals',
-                weight: 'Prime Angus Beef + Brioche Bun',
-                price: 8200,
-                oldPrice: 9500,
+                id: 'rt-2',
+                title: 'Sweet Ripe Farm Plantains (Bunch)',
+                category: 'roots',
+                categoryLabel: 'Tubers & Roots',
+                weight: '1 Large Bunch • Naturally Ripened',
+                price: 3500,
+                oldPrice: 4500,
                 rating: 4.9,
                 reviews: 980,
-                time: '20-25m',
-                image: './images/hero_burger.jpg',
-                badge: 'Top Pick',
-                organic: false,
-                tags: ['burger', 'beef', 'cheeseburger', 'meals']
+                time: 'Same-day',
+                image: './images/farm_fresh_basket.jpg',
+                badge: 'Top Harvest',
+                organic: true,
+                tags: ['plantain', 'ripe', 'bunch', 'farm', 'produce']
             },
             {
-                id: 'ml-3',
-                title: 'Creamy Wild Mushroom Truffle Pasta',
-                category: 'meals',
-                categoryLabel: 'Chef Meals',
-                weight: '450g Tagliatelle in Truffle Cream',
-                price: 7800,
+                id: 'rt-3',
+                title: 'Fresh Farm Sweet Potatoes (5kg Sack)',
+                category: 'roots',
+                categoryLabel: 'Tubers & Roots',
+                weight: '5kg Sack • Clean Orange Flesh',
+                price: 4800,
                 oldPrice: null,
                 rating: 4.8,
                 reviews: 430,
-                time: '25-30m',
-                image: './images/mushroom_pasta.jpg',
-                badge: 'Gourmet',
-                organic: false,
-                tags: ['pasta', 'mushroom', 'italian', 'meals']
+                time: 'Same-day',
+                image: './images/wholesale_farm_grains.jpg',
+                badge: 'Nutrient Rich',
+                organic: true,
+                tags: ['sweet potato', 'tubers', 'potatoes', 'sack']
             },
             {
-                id: 'ml-4',
-                title: 'Smokey Jollof Rice & Herb Chicken Bowl',
-                category: 'meals',
-                categoryLabel: 'Chef Meals',
-                weight: '1 Combo Bowl + Sweet Plantains',
-                price: 6500,
-                oldPrice: 7500,
+                id: 'rt-4',
+                title: 'White Garri Ijebu Farm Sack (10kg)',
+                category: 'roots',
+                categoryLabel: 'Tubers & Roots',
+                weight: '10kg Sack • Crisp, Dry & Sour',
+                price: 9500,
+                oldPrice: 11000,
                 rating: 5.0,
                 reviews: 1240,
-                time: '20-25m',
-                image: './images/tasty_meal_bowl.jpg',
-                badge: 'Legendary',
-                organic: false,
-                tags: ['jollof', 'rice', 'chicken', 'plantain', 'meals']
+                time: 'Same-day',
+                image: './images/wholesale_farm_grains.jpg',
+                badge: 'Wholesale',
+                organic: true,
+                tags: ['garri', 'cassava', 'staples', 'tubers', 'ijebu']
             }
         ];
 
@@ -1270,9 +1270,9 @@
                 all: 'All Food Products',
                 grains: '🌾 Farm Fresh Grains & Staples',
                 vegetables: '🥦 Organic Greens & Vegetables',
-                snacks: '🥨 Healthy Crunch & Artisanal Snacks',
+                snacks: '🥨 Pantry Staples & Healthy Snacks',
                 drinks: '🧃 Cold Juices, Smoothies & Refreshers',
-                meals: '🍕 Chef Prepared Gourmet Dishes'
+                roots: '🍠 Fresh Farm Tubers & Root Crops'
             };
             document.getElementById('productSectionTitle').textContent = titleMap[cat] || 'Fresh Items';
 
@@ -1281,9 +1281,9 @@
                 all: 'All Products',
                 grains: 'Grains & Staples',
                 vegetables: 'Fresh Vegetables',
-                snacks: 'Snacks & Bites',
+                snacks: 'Pantry & Snacks',
                 drinks: 'Drinks & Juices',
-                meals: 'Chef Meals'
+                roots: 'Tubers & Roots'
             };
             const iconMap = {
                 all: 'store',
@@ -1291,7 +1291,7 @@
                 vegetables: 'carrot',
                 snacks: 'cookie',
                 drinks: 'cup-soda',
-                meals: 'utensils'
+                roots: 'layers'
             };
             const breadcrumbEl = document.getElementById('breadcrumbCategory');
             if (breadcrumbEl) breadcrumbEl.textContent = breadcrumbMap[cat] || 'Products';
